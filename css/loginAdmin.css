@@ -1,0 +1,42 @@
+
+  
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-color: #3C9ED9;
+
+    }
+
+ .li{
+      display: block;
+      font-size: 30px;
+      text-align: center;
+    }
+ .panel-heading {
+    padding: 5px 15px;
+    font-size: 15px;
+    align-self: center;
+
+}
+
+
+.panel-footer {
+    padding: 1px 15px;
+    color: #A0A0A0;
+}
+
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+} 
+.boarder{
+    border: 2px solid black;
+}

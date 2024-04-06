@@ -1,0 +1,50 @@
+ CREATE TABLE room (
+			id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+			block VARCHAR(10) NOT NULL,
+			roomno INT(10) NOT NULL,
+			row INT(10) NOT NULL,
+			);
+
+CREATE TABLE `dbphp`.`studata` ( `id` INT(10) NOT NULL AUTO_INCREMENT ,
+                                `stu_name` VARCHAR(40) NOT NULL , 
+                                `rollno` INT(20) NOT NULL ,
+                                `eroll` INT(20) NOT NULL ,
+                                `gender` CHAR(10) NOT NULL ,
+                                `department` VARCHAR(40) NOT NULL ,
+                                PRIMARY KEY (`id`), UNIQUE (`rollno`)) ENGINE = InnoDB;
+
+CREATE TABLE `dbphp`.`seatplan` ( 
+`id` INT(10) NOT NULL AUTO_INCREMENT ,
+ `block` CHAR(10) NOT NULL ,
+ `roomno` INT(10) NOT NULL , 
+`department1` VARCHAR(10) NOT NULL ,
+ `start_roll1` INT(10) NOT NULL , 
+`end_roll1` INT(10) NOT NULL ,
+ `department2` VARCHAR(10) NOT NULL ,
+ `start_roll2` INT(10) NOT NULL ,
+ `end_roll2` INT(10) NOT NULL ,
+ PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+
+CREATE TABLE `dbphp`.`subject` ( `id` INT(10) NOT NULL AUTO_INCREMENT ,
+                                `department` VARCHAR(20) NOT NULL , 
+                                `subject` VARCHAR(50) NOT NULL , 
+                                PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `dbphp`.`staffdetail` ( `id` INT(10) NOT NULL AUTO_INCREMENT, 
+					`name` VARCHAR(20) NOT NULL , 
+					`address` VARCHAR(20) NOT NULL ,
+					 `phonenum` INT(25) NOT NULL ,
+					 `department` VARCHAR(20) NOT NULL,
+					 PRIMARY KEY (`id`) ) ENGINE = InnoDB;
+
+
+
+
+
+
+
+
+
